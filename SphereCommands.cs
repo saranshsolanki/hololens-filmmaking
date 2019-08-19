@@ -193,6 +193,8 @@ public class SphereCommands : MonoBehaviour
                 
             }
 
+            
+
             //if (FocusedObject.name == "large")
             //{
             //    trans = transform.localScale;
@@ -277,6 +279,7 @@ public class SphereCommands : MonoBehaviour
 
         return (endTime);
     }
+
 
 
     void Update()

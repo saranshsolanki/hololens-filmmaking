@@ -46,6 +46,7 @@ public class animationController : MonoBehaviour
             {
                 pd.Stop();
                 audioData.Stop();
+
                 playall.SetActive(false);
                 step1.SetActive(true);
                 step2.SetActive(true);
@@ -53,7 +54,6 @@ public class animationController : MonoBehaviour
                 step4.SetActive(true);
                 steps.SetActive(false);
                 pd.initialTime = checkWhichAnimationStart();
-
 
             }
             if (FocusedObject.name == "step1")
@@ -74,7 +74,7 @@ public class animationController : MonoBehaviour
             {
                 pd.Stop();
                 audioData.Stop();
-                
+
                 playall.SetActive(true);
                 step1.SetActive(true);
                 step2.SetActive(false);
@@ -89,7 +89,7 @@ public class animationController : MonoBehaviour
             {
                 pd.Stop();
                 audioData.Stop();
-                
+
                 playall.SetActive(true);
                 step1.SetActive(true);
                 step2.SetActive(true);
@@ -116,7 +116,7 @@ public class animationController : MonoBehaviour
         }
 
 
-        
+
     }
 
     public float checkWhichAnimationStart()

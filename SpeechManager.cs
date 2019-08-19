@@ -76,6 +76,8 @@ public class SpeechManager : MonoBehaviour
 
         keywords.Add("steps", SList);
 
+        keywords.Add("close steps", listClose);
+
         //keywords.Add("large", Large);
 
 
@@ -303,6 +305,11 @@ private void Play()
     {
         list.SetActive(true);
     }
+
+    private void listClose()
+    {
+        list.SetActive(false);
+    }
     //private void Left()
     //{
     //    PlayableDirector pd = timeline.GetComponent<PlayableDirector>();
@@ -403,7 +410,6 @@ private void Play()
 
         return (endTime);
     }
-
 
 
 }
